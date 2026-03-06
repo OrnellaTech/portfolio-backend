@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api - Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== Header ===== -->
+    <header>
+        <div class="header">
+            <p>Ornella<span>Tech</span></p>
+            <!-- <div class="onglets">
+                <p>Api - Portfolio</p>
+            </div> -->
+        </div>
+    </header>
+
+    <!-- ===== Introduction ===== -->
+    <div class="introduction">
+        <h2>Api - Portfolio</h2>
+        <!-- <p>Adaptez l'affichage de notre portfolio avec vos propres informations !</p> -->
+    </div>
+
+    
+    <!-- ===== Tableau des URLs ===== -->
+    <!-- <h3>Tableau d'URL</h3> -->
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>admin/</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>api/</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>^media/(?P<path>.*)$</td>
+        </tr>
+    </table>
+
+     <!-- ===== Introduction ===== -->
+   
+
+    <!-- ===== Images avec scroll automatique ===== -->
+    <div class="container-photo">
+           <p>Adaptez l'affichage de notre portfolio avec vos propres informations !</p>
+  
+        <div class="block2 horizontal-snap">
+            <!-- Répéter les images pour un défilement infini -->
+            <img src="{% static 'images/portofolio_image1.png' %}" alt="Image 1">
+            <img src="{% static 'images/portofolio_image2.png' %}" alt="Image 2">
+            <img src="{% static 'images/portofolio_image3.png' %}" alt="Image 3">
+            <img src="{% static 'images/portofolio_image4.png' %}" alt="Image 4">
+            <img src="{% static 'images/portofolio_image1.png' %}" alt="Image 1">
+            <img src="{% static 'images/portofolio_image2.png' %}" alt="Image 2">
+            <img src="{% static 'images/portofolio_image3.png' %}" alt="Image 3">
+            <img src="{% static 'images/portofolio_image4.png' %}" alt="Image 4">
+         
+        </div>
+    </div>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <p>2026 - Copyright <a href="#">Ornella<span>Tech</span></a> - ornella05koffi@gmail.com</p>
+    </footer>
+
+</body>
+</html>

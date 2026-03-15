@@ -28,8 +28,8 @@ DEBUG = os.environ.get("DEBUG") == "True"
 
 import os
 
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "127.0.0.1,localhost", "portfolio-backend-xyho.onrender.com").split(",")
-
+# ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "127.0.0.1,localhost", "portfolio-backend-xyho.onrender.com").split(",")
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "127.0.0.1,localhost,portfolio-backend-xyho.onrender.com").split(",")
 # Application definition
 
 INSTALLED_APPS = [

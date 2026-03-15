@@ -28,7 +28,7 @@ DEBUG = os.environ.get("DEBUG") == "True"
 
 import os
 
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "127.0.0.1,localhost", "portfolio-backend-xyho.onrender.com").split(",")
 
 # Application definition
 
@@ -84,7 +84,7 @@ import dj_database_url
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'data' / 'db.sqlite3',
     }
     #  'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
 }

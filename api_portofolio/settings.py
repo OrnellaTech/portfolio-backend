@@ -92,9 +92,6 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
 ]
 
-# Ajout de WhiteNoise seulement en production
-if IS_PRODUCTION:
-    MIDDLEWARE.append('whitenoise.middleware.WhiteNoiseMiddleware')
 
 MIDDLEWARE += [
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -151,9 +148,15 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / "static"]  # Vos fichiers statiques
 STATIC_ROOT = BASE_DIR / 'staticfiles'     # Pour collectstatic
 
-# Configuration WhiteNoise pour production
+
+# Ajout de WhiteNoise seulement en production
 if IS_PRODUCTION:
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+   
+    MIDDLEWARE.append('whitenoise.middleware.WhiteNoiseMiddleware')
+
+
+
 
 # Media files
 MEDIA_URL = '/media/'

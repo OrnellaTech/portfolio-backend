@@ -25,7 +25,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 # Configuration selon l'environnement
 if IS_PRODUCTION:
-    DEBUG = False
+    DEBUG = True
     ALLOWED_HOSTS = [
         '.railway.app',
         'portfolio-frontend-ecru-mu.vercel.app',

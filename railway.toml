@@ -5,4 +5,4 @@ command = "pip install -r requirements.txt"
 startCommand = "python manage.py migrate && python manage.py collectstatic --noinput && gunicorn api_portofolio.wsgi"
 
 [volumes]
-"db" = "/app/db"  # Monte un volume persistant pour SQLite
+db = "/app/db"

@@ -18,7 +18,7 @@ from decouple import config
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Détection de l'environnement
-IS_PRODUCTION = os.environ.get('RAILWAY_ENVIRONMENT') == 'production'
+IS_PRODUCTION = os.environ.get('RAILWAY_ENVIRONMENT_NAME') == 'production'
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
@@ -31,11 +31,17 @@ if IS_PRODUCTION:
         'portfolio-frontend-ecru-mu.vercel.app',
     ]
     
+      # CORRECTION: Crée le dossier /app/db s'il n'existe pas
+    db_path = '/app/db'
+    if not os.path.exists(db_path):
+        os.makedirs(db_path, exist_ok=True)
+        print(f"📁 Dossier {db_path} créé")
+    
     # Database pour production (SQLite avec volume persistant)
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': '/app/db/db.sqlite3',  # Volume persistant Railway
+            'NAME': os.path.join(db_path, 'db.sqlite3'),
         }
     }
     

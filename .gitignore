@@ -22,7 +22,9 @@ venv.bak/
 
 # Database
 # *.db
-# *.sqlite3
+*db.sqlite3
+/db/*.sqlite3
+
 
 # Uploads
 /media/

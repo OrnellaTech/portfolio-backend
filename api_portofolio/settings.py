@@ -54,6 +54,7 @@ if IS_PRODUCTION:
     # CSRF trusted origins
     CSRF_TRUSTED_ORIGINS = [
         'https://*.railway.app',
+        'https://portfolio-backend-production-38e9.up.railway.app',
         'https://portfolio-frontend-ecru-mu.vercel.app',
     ]
     

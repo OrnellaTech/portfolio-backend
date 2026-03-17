@@ -57,6 +57,12 @@ if IS_PRODUCTION:
         'https://portfolio-backend-production-38e9.up.railway.app',
         'https://portfolio-frontend-ecru-mu.vercel.app',
     ]
+    # Force Django à vérifier la connexion avant chaque requête
+    DATABASES['default']['CONN_MAX_AGE'] = 0  # Pas de connexion persistante
+    DATABASES['default']['OPTIONS'] = {
+        'timeout': 20,
+        'check_same_thread': False,  # Important pour SQLite en production
+    }
     
 else:
     # Développement local

@@ -31,8 +31,8 @@ venv.bak/
 /uploads/
 
 # Migrations
-**/migrations/*.py
-!**/migrations/__init__.py
+# **/migrations/*.py
+# !**/migrations/__init__.py
 
 # Misc
 .DS_Store

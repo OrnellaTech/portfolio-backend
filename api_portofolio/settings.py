@@ -17,8 +17,12 @@ from pathlib import Path
 import os
 from decouple import config
 import dj_database_url
+from dotenv import load_dotenv
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+load_dotenv(BASE_DIR / '.env') 
 
 # Détection de l'environnement
 IS_PRODUCTION = os.environ.get('RAILWAY_ENVIRONMENT_NAME') == 'production'
@@ -62,13 +66,23 @@ else:
     DEBUG = True
     ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
     
-    # Database locale (SQLite)
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
+    db_url = os.environ.get('DATABASE_PUBLIC_URL')
+    if db_url:
+        DATABASES = {
+            'default': dj_database_url.config(
+                default=db_url,
+                conn_max_age=600,
+                ssl_require=False  
+            )
         }
-    }
+    else:
+        # Utiliser SQLite si pas de Railway
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': BASE_DIR / 'db.sqlite3',
+            }
+        }
     
     # CORS permissif en développement
     CORS_ALLOW_ALL_ORIGINS = True

@@ -9,11 +9,14 @@ https://docs.djangoproject.com/en/6.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
-
+"""
+Django settings for api_portofolio project.
+"""
 
 from pathlib import Path
 import os
 from decouple import config
+import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,24 +28,20 @@ SECRET_KEY = config('SECRET_KEY')
 
 # Configuration selon l'environnement
 if IS_PRODUCTION:
-    DEBUG = True
+    DEBUG = False
     ALLOWED_HOSTS = [
         '.railway.app',
         'portfolio-frontend-ecru-mu.vercel.app',
     ]
     
-      # CORRECTION: Crée le dossier /app/db s'il n'existe pas
-    db_path = '/app/db'
-    if not os.path.exists(db_path):
-        os.makedirs(db_path, exist_ok=True)
-        print(f"📁 Dossier {db_path} créé")
-    
-    # Database pour production (SQLite avec volume persistant)
+    # Database pour production (PostgreSQL)
     DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(db_path, 'db.sqlite3'),
-        }
+        'default': dj_database_url.config(
+            default=os.environ.get('DATABASE_URL'),
+            conn_max_age=600,
+            conn_health_checks=True,
+            ssl_require=True
+        )
     }
     
     # CORS restreint en production
@@ -57,19 +56,13 @@ if IS_PRODUCTION:
         'https://portfolio-backend-production-38e9.up.railway.app',
         'https://portfolio-frontend-ecru-mu.vercel.app',
     ]
-    # Force Django à vérifier la connexion avant chaque requête
-    DATABASES['default']['CONN_MAX_AGE'] = 0  # Pas de connexion persistante
-    DATABASES['default']['OPTIONS'] = {
-        'timeout': 20,
-        'check_same_thread': False,  # Important pour SQLite en production
-    }
     
 else:
     # Développement local
     DEBUG = True
     ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
     
-    # Database locale
+    # Database locale (SQLite)
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
@@ -97,10 +90,6 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
-]
-
-
-MIDDLEWARE += [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -108,6 +97,10 @@ MIDDLEWARE += [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+# Ajout de WhiteNoise seulement en production
+if IS_PRODUCTION:
+    MIDDLEWARE.append('whitenoise.middleware.WhiteNoiseMiddleware')
 
 ROOT_URLCONF = 'api_portofolio.urls'
 
@@ -152,18 +145,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "static"]  # Vos fichiers statiques
-STATIC_ROOT = BASE_DIR / 'staticfiles'     # Pour collectstatic
+STATICFILES_DIRS = [BASE_DIR / "static"]
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-
-# Ajout de WhiteNoise seulement en production
 if IS_PRODUCTION:
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-   
-    MIDDLEWARE.append('whitenoise.middleware.WhiteNoiseMiddleware')
-
-
-
 
 # Media files
 MEDIA_URL = '/media/'

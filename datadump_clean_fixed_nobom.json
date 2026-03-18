@@ -1,0 +1,1275 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$1200000$b3YZACFeNkeGA2bhFExSJI$l0x7vsupbqVssqZwGEUOQhCwlzai6jY6NkHt2eGMaUg=",
+      "last_login": "2026-03-15T19:27:24.496Z",
+      "is_superuser": true,
+      "username": "ornella",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2026-01-12T14:30:47.642Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$t5l2YXp1rju5tFo4EdrVeD$Q05MKEvPXG0Nu0k0KHA6MMas5vYgop/ZdK264OBb74Q=",
+      "last_login": "2026-02-27T11:58:16.412Z",
+      "is_superuser": true,
+      "username": "ornellakoffi",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2026-02-27T11:57:48.183Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$1200000$yG7J9lXpxa3UgJ7NuFHZ65$Ks+kBPORRUENH6+BKB/QOgaRi4J13Ux/m4UoOcn9it0=",
+      "last_login": "2026-03-17T15:37:20.813Z",
+      "is_superuser": true,
+      "username": "nana",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2026-03-17T15:26:59.713Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "18kngyspsty9zb0dwas9tze870vj8zpc",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSEMRR4u3fcbyAAzUjU0Ke3K-O_apAvd3nPOfYmI21rj1mmJUxEXAeL0uyXMD2o7KHdst1nmua3LlOSuyIN2Oc6FntfD_Tuo2Ou3ZpsMEaiSWZFyLmiwrELQQ9CZEgMOZEChP6PzxgdwJXtI3jhmsC6I9wfkljeG:1w1c4o:q1hKl5TFA62e8MA_F18s3TOT9CjCGF_APKOXtYwQzr4",
+      "expire_date": "2026-03-29T03:23:38.442Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "7lcnx00f77ed7e486ktpeb83wkzhb1gt",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hBgKDAu3XsGMtOhUjVtUtqV8e7apAvd_vfef6lM21rz1sqSR1Fn5dTpd2PqH2Xagdxpus26n6d1GVnvij5o09dZyvNyuH8HlVr91snFGAXAdyYYHIxFGgRTYvHiwYKLQC4FZicx9RaQrAdMKMwYQunU-wOxWTbM:1vvwUu:lKhiy-8oq-GUT82RXBpqYnhZwyn75c4F-NpAQvpyyAs",
+      "expire_date": "2026-03-13T11:59:08.033Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "9gg1ops0yxmc3i8nevye416grstc0nor",
+    "fields": {
+      "session_data": ".eJxVjMEOwiAQBf-FsyGwgIBH7_0GsiwgVQNJaU_Gf9cmPej1zcx7sYDbWsM28hLmxC5MsdPvFpEeue0g3bHdOqfe1mWOfFf4QQefesrP6-H-HVQc9Vtbb6KwAmzBAtIUFX3R5ZzBJ4ggJSUS4JR3zipvtHCQIhiQgFlTJmDvD8yhN0A:1w2WTw:3rykWF8C6AweAlY33JMinwn1CyVkGPqxp6KItFG53Sk",
+      "expire_date": "2026-03-31T15:37:20.822Z"
+    }
+  },
+  {
+    "model": "portfolio.skill",
+    "pk": 2,
+    "fields": {
+      "utilisateur": 1,
+      "label": "Languages & Frameworks",
+      "value": "Python, Java, Django, Flutter"
+    }
+  },
+  {
+    "model": "portfolio.skill",
+    "pk": 4,
+    "fields": {
+      "utilisateur": 1,
+      "label": "Databases",
+      "value": "SQL, MySQL, PostgreSQL"
+    }
+  },
+  {
+    "model": "portfolio.skill",
+    "pk": 5,
+    "fields": {
+      "utilisateur": 1,
+      "label": "Tools & Software",
+      "value": "GitHub, VS Code, Canva, Figma"
+    }
+  },
+  {
+    "model": "portfolio.skill",
+    "pk": 7,
+    "fields": {
+      "utilisateur": 2,
+      "label": "AI & Machine Learning",
+      "value": "TensorFlow, PyTorch, Scikit-learn"
+    }
+  },
+  {
+    "model": "portfolio.skill",
+    "pk": 8,
+    "fields": {
+      "utilisateur": 2,
+      "label": "Data Science",
+      "value": "Pandas, NumPy, Matplotlib"
+    }
+  },
+  {
+    "model": "portfolio.skill",
+    "pk": 9,
+    "fields": {
+      "utilisateur": 2,
+      "label": "Web Development",
+      "value": "Django, React, Node.js"
+    }
+  },
+  {
+    "model": "portfolio.skill",
+    "pk": 10,
+    "fields": {
+      "utilisateur": 2,
+      "label": "Databases",
+      "value": "MongoDB, PostgreSQL"
+    }
+  },
+  {
+    "model": "portfolio.skill",
+    "pk": 11,
+    "fields": {
+      "utilisateur": 2,
+      "label": "Languages",
+      "value": "Franþais (natif), Anglais (avancÚ)"
+    }
+  },
+  {
+    "model": "portfolio.utilisateur",
+    "pk": 1,
+    "fields": {
+      "nom": "Konan",
+      "prenom": "OcÚane",
+      "photo_profil": "images/profil_user1.png",
+      "photo_intro": "images/intro_user1.png",
+      "description": "Útudiante en 3Þme annÚe de Computer science",
+      "age": "20",
+      "email": "ornellakoffi.photos@gmail.com",
+      "telephone": "+225 0728293136",
+      "lien_cv": "http://127.0.0.1:8000/api/Experience/",
+      "titles_text": "AI Student, Web Developer, Frontend dev"
+    }
+  },
+  {
+    "model": "portfolio.utilisateur",
+    "pk": 2,
+    "fields": {
+      "nom": "Kouakou",
+      "prenom": "Yvan",
+      "photo_profil": "images/profil_user2.png",
+      "photo_intro": "images/intro_user2.png",
+      "description": "Data Scientist & AI Specialist, passionnÚe par l'intelligence artificielle",
+      "age": "20",
+      "email": "ornella05koffi@gmail.com",
+      "telephone": "+225 05 55 55 55",
+      "lien_cv": "https://example.com/cv-yvan.pdf",
+      "titles_text": "Data Scientist, AI Student, Web Developer"
+    }
+  },
+  {
+    "model": "portfolio.tool",
+    "pk": 1,
+    "fields": {
+      "nom": "canva"
+    }
+  },
+  {
+    "model": "portfolio.tool",
+    "pk": 2,
+    "fields": {
+      "nom": "Html"
+    }
+  },
+  {
+    "model": "portfolio.tool",
+    "pk": 3,
+    "fields": {
+      "nom": "Python"
+    }
+  },
+  {
+    "model": "portfolio.tool",
+    "pk": 4,
+    "fields": {
+      "nom": "Django"
+    }
+  },
+  {
+    "model": "portfolio.tool",
+    "pk": 5,
+    "fields": {
+      "nom": "Flutter"
+    }
+  },
+  {
+    "model": "portfolio.tool",
+    "pk": 6,
+    "fields": {
+      "nom": "HTML"
+    }
+  },
+  {
+    "model": "portfolio.tool",
+    "pk": 7,
+    "fields": {
+      "nom": "CSS"
+    }
+  },
+  {
+    "model": "portfolio.tool",
+    "pk": 8,
+    "fields": {
+      "nom": "JavaScript"
+    }
+  },
+  {
+    "model": "portfolio.tool",
+    "pk": 9,
+    "fields": {
+      "nom": "Bootstrap"
+    }
+  },
+  {
+    "model": "portfolio.tool",
+    "pk": 10,
+    "fields": {
+      "nom": "Dart"
+    }
+  },
+  {
+    "model": "portfolio.tool",
+    "pk": 11,
+    "fields": {
+      "nom": "Canva"
+    }
+  },
+  {
+    "model": "portfolio.tool",
+    "pk": 12,
+    "fields": {
+      "nom": "Figma"
+    }
+  },
+  {
+    "model": "portfolio.tool",
+    "pk": 13,
+    "fields": {
+      "nom": "React"
+    }
+  },
+  {
+    "model": "portfolio.tool",
+    "pk": 14,
+    "fields": {
+      "nom": "Vue.js"
+    }
+  },
+  {
+    "model": "portfolio.tool",
+    "pk": 15,
+    "fields": {
+      "nom": "Node.js"
+    }
+  },
+  {
+    "model": "portfolio.tool",
+    "pk": 16,
+    "fields": {
+      "nom": "MongoDB"
+    }
+  },
+  {
+    "model": "portfolio.galleryimage",
+    "pk": 1,
+    "fields": {
+      "projet": 1,
+      "image": "gallery/smitty-nxSGRqh9NoE-unsplash.jpg",
+      "order": 1
+    }
+  },
+  {
+    "model": "portfolio.galleryimage",
+    "pk": 2,
+    "fields": {
+      "projet": 1,
+      "image": "gallery/frederico-almeida-80-IGI1mr24-unsplash.jpg",
+      "order": 0
+    }
+  },
+  {
+    "model": "portfolio.projet",
+    "pk": 1,
+    "fields": {
+      "utilisateur": 1,
+      "titre": "Site de gestion e-learning",
+      "resume": "wireframe d'un site de gestion Úducative et de collaboration",
+      "image": "images/projet_1_oceane.png",
+      "lien": null,
+      "role": "ui designer",
+      "category": "web app",
+      "github_url": null,
+      "media_type": null,
+      "media_url": null,
+      "copyright_author": null,
+      "tools": [
+        1
+      ],
+      "gallery": []
+    }
+  },
+  {
+    "model": "portfolio.projet",
+    "pk": 2,
+    "fields": {
+      "utilisateur": 1,
+      "titre": "Lorem Ipsum",
+      "resume": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type a",
+      "image": "images/projet_2_oceane.jpg",
+      "lien": null,
+      "role": "co-founder & CEO",
+      "category": "web pp",
+      "github_url": null,
+      "media_type": "gallery",
+      "media_url": "https://www.bing.com/ck/a?!&&p=6801a3ea6d1014d42cf68a99b1fbac7048caa68ae4f14a0d4cb8a33506722946JmltdHM9MTc3Mjc1NTIwMA&ptn=3&ver=2&hsh=4&fclid=2aab2d44-3096-6241-0b5b-3a4231ac6358&u=a1L2ltYWdlcy9zZWFyY",
+      "copyright_author": null,
+      "tools": [
+        3,
+        4,
+        5
+      ],
+      "gallery": []
+    }
+  },
+  {
+    "model": "portfolio.projet",
+    "pk": 6,
+    "fields": {
+      "utilisateur": 2,
+      "titre": "AI Image Recognition",
+      "resume": "Application de reconnaissance d'images avec TensorFlow",
+      "image": "images/projet_1_yvan.png",
+      "lien": null,
+      "role": "Data Scientist",
+      "category": "AI App",
+      "github_url": "https://github.com/oceane/ai-image-recog",
+      "media_type": "gallery",
+      "media_url": null,
+      "copyright_author": null,
+      "tools": [
+        3,
+        4
+      ],
+      "gallery": []
+    }
+  },
+  {
+    "model": "portfolio.projet",
+    "pk": 7,
+    "fields": {
+      "utilisateur": 2,
+      "titre": "DataViz Dashboard",
+      "resume": "Dashboard interactif de visualisation de donnÚes",
+      "image": "images/projet_2_yvan.png",
+      "lien": null,
+      "role": "Frontend Developer",
+      "category": "Web App",
+      "github_url": "https://github.com/oceane/dataviz",
+      "media_type": null,
+      "media_url": null,
+      "copyright_author": null,
+      "tools": [
+        6,
+        7,
+        8,
+        13
+      ],
+      "gallery": []
+    }
+  },
+  {
+    "model": "portfolio.sociallink",
+    "pk": 4,
+    "fields": {
+      "utilisateur": 1,
+      "nom": "twitter",
+      "lien": "https://twitter.com/ornella_dev"
+    }
+  },
+  {
+    "model": "portfolio.sociallink",
+    "pk": 5,
+    "fields": {
+      "utilisateur": 2,
+      "nom": "linkedin",
+      "lien": "https://www.linkedin.com/in/oceane-konan/"
+    }
+  },
+  {
+    "model": "portfolio.sociallink",
+    "pk": 6,
+    "fields": {
+      "utilisateur": 2,
+      "nom": "github",
+      "lien": "https://github.com/oceane-ai"
+    }
+  },
+  {
+    "model": "portfolio.sociallink",
+    "pk": 7,
+    "fields": {
+      "utilisateur": 2,
+      "nom": "twitter",
+      "lien": "https://twitter.com/oceane_data"
+    }
+  },
+  {
+    "model": "portfolio.experience",
+    "pk": 1,
+    "fields": {
+      "utilisateur": 1,
+      "description": "Stage dÚveloppeur full-stack",
+      "type_contrat": "Stage",
+      "date_debut": "2025-09-07T10:28:57.449Z",
+      "date_fin": "2026-02-04T10:28:57.449Z",
+      "nom_entreprise": "Tech Start-up",
+      "role": "DÚveloppeur full-stack"
+    }
+  },
+  {
+    "model": "portfolio.experience",
+    "pk": 2,
+    "fields": {
+      "utilisateur": 2,
+      "description": "Data Scientist Junior",
+      "type_contrat": "CDI",
+      "date_debut": "2025-03-06T10:31:37.536Z",
+      "date_fin": "2026-03-06T10:31:37.536Z",
+      "nom_entreprise": "AI Solutions",
+      "role": "Data Scientist"
+    }
+  },
+  {
+    "model": "portfolio.service",
+    "pk": 4,
+    "fields": {
+      "utilisateur": 1,
+      "nom": "UI/UX Design",
+      "detail": "Design d'interfaces intuitives et attrayantes"
+    }
+  },
+  {
+    "model": "portfolio.service",
+    "pk": 5,
+    "fields": {
+      "utilisateur": 1,
+      "nom": "Consulting",
+      "detail": "Conseil en architecture technique"
+    }
+  },
+  {
+    "model": "portfolio.service",
+    "pk": 6,
+    "fields": {
+      "utilisateur": 2,
+      "nom": "Data Science",
+      "detail": "Analyse de donnÚes et machine learning"
+    }
+  },
+  {
+    "model": "portfolio.service",
+    "pk": 8,
+    "fields": {
+      "utilisateur": 2,
+      "nom": "Data Visualization",
+      "detail": "CrÚation de dashboards interactifs"
+    }
+  },
+  {
+    "model": "portfolio.service",
+    "pk": 9,
+    "fields": {
+      "utilisateur": 2,
+      "nom": "Formation",
+      "detail": "Formation en data science"
+    }
+  },
+  {
+    "model": "portfolio.prisecontact",
+    "pk": 3,
+    "fields": {
+      "utilisateur": 1,
+      "nom_complet": "Test User",
+      "email": "test@example.com",
+      "objet": "Test sujet",
+      "message": "Test message"
+    }
+  },
+  {
+    "model": "portfolio.prisecontact",
+    "pk": 4,
+    "fields": {
+      "utilisateur": 1,
+      "nom_complet": "Test User",
+      "email": "ornellakoffi.photos@gmail.com",
+      "objet": "Demande de devis",
+      "message": "Bonjour, je suis intÚressÚ par vos services de dÚveloppement web."
+    }
+  },
+  {
+    "model": "portfolio.prisecontact",
+    "pk": 6,
+    "fields": {
+      "utilisateur": 2,
+      "nom_complet": "Marie Claire",
+      "email": "marie.claire@email.com",
+      "objet": "Collaboration",
+      "message": "Je souhaiterais discuter d'une potentielle collaboration."
+    }
+  },
+  {
+    "model": "portfolio.prisecontact",
+    "pk": 7,
+    "fields": {
+      "utilisateur": 1,
+      "nom_complet": "dedjene",
+      "email": "dedjeneg@gmail.com",
+      "objet": "test",
+      "message": "bonjour"
+    }
+  },
+  {
+    "model": "portfolio.prisecontact",
+    "pk": 8,
+    "fields": {
+      "utilisateur": 1,
+      "nom_complet": "Sedrick",
+      "email": "sedrick@gmail.com",
+      "objet": "Demande de collaboration",
+      "message": "zsdfgvbhjnk,"
+    }
+  },
+  {
+    "model": "portfolio.prisecontact",
+    "pk": 9,
+    "fields": {
+      "utilisateur": 1,
+      "nom_complet": "retyguhuj",
+      "email": "ornellakoffi05@gmail.com",
+      "objet": "iojknj,",
+      "message": "oijkhyugtj"
+    }
+  },
+  {
+    "model": "portfolio.prisecontact",
+    "pk": 10,
+    "fields": {
+      "utilisateur": 2,
+      "nom_complet": "yuyuyu",
+      "email": "yuyuyu@gmail.com",
+      "objet": "testkouakou",
+      "message": "testkouakou"
+    }
+  },
+  {
+    "model": "portfolio.prisecontact",
+    "pk": 11,
+    "fields": {
+      "utilisateur": 1,
+      "nom_complet": "nq",
+      "email": "dedjeneg@gmail.com",
+      "objet": "jjjj",
+      "message": "dkhjgnhbg"
+    }
+  },
+  {
+    "model": "portfolio.prisecontact",
+    "pk": 12,
+    "fields": {
+      "utilisateur": 2,
+      "nom_complet": "z",
+      "email": "z@gmail.com",
+      "objet": "z",
+      "message": "z"
+    }
+  },
+  {
+    "model": "portfolio.prisecontact",
+    "pk": 13,
+    "fields": {
+      "utilisateur": 1,
+      "nom_complet": "hey",
+      "email": "hey@gmail.com",
+      "objet": "hj'\"nefzauijkn refvzdikjn,",
+      "message": "ijuhyjbgfv"
+    }
+  },
+  {
+    "model": "portfolio.localisation",
+    "pk": 1,
+    "fields": {
+      "utilisateur": 1,
+      "pays": "C¶te dÆIvoire",
+      "ville": "Grand-bassam",
+      "longitude": null,
+      "latitude": null,
+      "quartier": "MockeyVille"
+    }
+  },
+  {
+    "model": "portfolio.localisation",
+    "pk": 2,
+    "fields": {
+      "utilisateur": 2,
+      "pays": "C¶te d'Ivoire",
+      "ville": "Abidjan",
+      "longitude": "-4.02",
+      "latitude": "5.33",
+      "quartier": "Cocody"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2026-02-27T11:59:08.005Z",
+      "user": [
+        "ornellakoffi"
+      ],
+      "content_type": [
+        "auth",
+        "user"
+      ],
+      "object_id": "1",
+      "object_repr": "ornella",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2026-03-06T03:19:49.331Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "tool"
+      ],
+      "object_id": "1",
+      "object_repr": "canva",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2026-03-06T03:20:19.040Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Koffi",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"name\": \"skill\", \"object\": \"langage: Anglais\"}}, {\"added\": {\"name\": \"Projet\", \"object\": \"edu\"}}, {\"added\": {\"name\": \"('R\\u00e9seau social',)\", \"object\": \"linkdln\"}}, {\"added\": {\"name\": \"Service\", \"object\": \"site web\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2026-03-06T07:00:56.613Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "projet"
+      ],
+      "object_id": "2",
+      "object_repr": "How Does One Go About a Buying Furniture?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2026-03-06T07:02:09.221Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "projet"
+      ],
+      "object_id": "2",
+      "object_repr": "How Does One Go About a Buying Furniture?",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image principale\", \"GitHub URL\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2026-03-06T07:48:22.145Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Koffi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Photo de profil\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2026-03-06T08:15:20.955Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "galleryimage"
+      ],
+      "object_id": "1",
+      "object_repr": "Image pour edu",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2026-03-06T08:15:38.693Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "galleryimage"
+      ],
+      "object_id": "2",
+      "object_repr": "Image pour edu",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2026-03-06T08:19:48.328Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "projet"
+      ],
+      "object_id": "2",
+      "object_repr": "How Does One Go About a Buying Furniture?",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Type de m\\u00e9dia\", \"URL M\\u00e9dia (Vid\\u00e9o ou Galerie)\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2026-03-06T08:20:26.319Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "projet"
+      ],
+      "object_id": "2",
+      "object_repr": "How Does One Go About a Buying Furniture?",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Type de m\\u00e9dia\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2026-03-06T08:24:58.163Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "tool"
+      ],
+      "object_id": "2",
+      "object_repr": "Html",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2026-03-06T08:25:14.649Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "projet"
+      ],
+      "object_id": "1",
+      "object_repr": "edu",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Outils utilis\\u00e9s\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2026-03-06T08:26:11.211Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Koffi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Photo d'introduction\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2026-03-06T08:27:28.194Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Koffi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Photo de profil\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2026-03-06T08:35:18.686Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Koffi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Photo de profil\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2026-03-06T08:36:12.885Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Koffi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Photo de profil\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2026-03-06T08:44:24.517Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Konan",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Nom Utilisateur\", \"Pr\\u00e9nom Utilisateur\", \"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2026-03-06T08:59:50.478Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Konan",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2026-03-06T09:04:39.324Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Konan",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Photo de profil\", \"Photo d'introduction\", \"Titres (s\\u00e9par\\u00e9s par des virgules)\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2026-03-06T09:07:58.721Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Konan",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Titres (s\\u00e9par\\u00e9s par des virgules)\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2026-03-06T09:33:52.997Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Konan",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"name\": \"Localisation\", \"object\": \"C\\u00f4te d\\u2019Ivoire\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2026-03-06T09:34:46.044Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Konan",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2026-03-06T10:20:53.495Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Konan",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"T\\u00e9l\\u00e9phone\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2026-03-06T10:32:43.575Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "2",
+      "object_repr": "Konan",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Photo de profil\", \"Photo d'introduction\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2026-03-06T10:36:45.846Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "2",
+      "object_repr": "Kouakou",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Nom Utilisateur\", \"Pr\\u00e9nom Utilisateur\", \"Photo d'introduction\", \"Age\", \"Email\", \"Lien CV\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2026-03-06T10:37:38.383Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Konan",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Photo de profil\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2026-03-06T10:38:47.442Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Konan",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Email\", \"T\\u00e9l\\u00e9phone\"]}}, {\"deleted\": {\"name\": \"Projet\", \"object\": \"Scoop 3B website\"}}, {\"deleted\": {\"name\": \"Projet\", \"object\": \"Ivoire Fashion\"}}, {\"deleted\": {\"name\": \"Projet\", \"object\": \"Health Search\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2026-03-06T10:41:16.606Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Konan",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"name\": \"Projet\", \"object\": \"Site de gestion e-learning\", \"fields\": [\"Titre\", \"R\\u00e9sum\\u00e9\", \"Outils utilis\\u00e9s\"]}}, {\"changed\": {\"name\": \"Projet\", \"object\": \"Lorem Ipsum\", \"fields\": [\"Titre\", \"R\\u00e9sum\\u00e9\", \"Outils utilis\\u00e9s\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2026-03-06T10:42:14.988Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Konan",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Photo de profil\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2026-03-06T10:44:01.756Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Konan",
+      "action_flag": 2,
+      "change_message": "[{\"deleted\": {\"name\": \"skill\", \"object\": \"langage: Anglais\"}}, {\"deleted\": {\"name\": \"skill\", \"object\": \"Web & Front-end: HTML, CSS, JavaScript, Bootstrap\"}}, {\"deleted\": {\"name\": \"skill\", \"object\": \"Languages: Fran\\u00e7ais (natif), Anglais (interm\\u00e9diaire)\"}}, {\"deleted\": {\"name\": \"('R\\u00e9seau social',)\", \"object\": \"linkdln\"}}, {\"deleted\": {\"name\": \"('R\\u00e9seau social',)\", \"object\": \"linkedin\"}}, {\"deleted\": {\"name\": \"('R\\u00e9seau social',)\", \"object\": \"github\"}}, {\"deleted\": {\"name\": \"Service\", \"object\": \"site web\"}}, {\"deleted\": {\"name\": \"Service\", \"object\": \"Web Development\"}}, {\"deleted\": {\"name\": \"Service\", \"object\": \"Mobile App Development\"}}, {\"changed\": {\"name\": \"Prise de contact\", \"object\": \"Test User\", \"fields\": [\"Objet\", \"Message\"]}}, {\"deleted\": {\"name\": \"Prise de contact\", \"object\": \"Mayi\"}}, {\"deleted\": {\"name\": \"Prise de contact\", \"object\": \"\\u00f9pmlkl,hj\"}}, {\"deleted\": {\"name\": \"Prise de contact\", \"object\": \"Jean Dupont\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2026-03-06T10:46:17.449Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "2",
+      "object_repr": "Kouakou",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"name\": \"Projet\", \"object\": \"AI Image Recognition\", \"fields\": [\"Image principale\"]}}, {\"changed\": {\"name\": \"Projet\", \"object\": \"DataViz Dashboard\", \"fields\": [\"Image principale\"]}}, {\"deleted\": {\"name\": \"Service\", \"object\": \"AI Consulting\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2026-03-06T10:46:41.747Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "2",
+      "object_repr": "Kouakou",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Photo de profil\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2026-03-06T12:43:36.384Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "1",
+      "object_repr": "Konan",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2026-03-14T14:05:03.496Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "2",
+      "object_repr": "Kouakou",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Titres (s\\u00e9par\\u00e9s par des virgules)\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2026-03-14T17:24:37.553Z",
+      "user": [
+        "ornella"
+      ],
+      "content_type": [
+        "portfolio",
+        "utilisateur"
+      ],
+      "object_id": "2",
+      "object_repr": "Kouakou",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+    }
+  }
+]

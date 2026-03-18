@@ -1,13 +1,16 @@
-# Crée un fichier .gitignore
+# fichier .gitignore
 echo "# Django
 *.log
 *.pot
 *.pyc
 __pycache__/
 # db.sqlite3
-/media
-/static
+# /media
+# Static files (source) - ne pas ignorer
+# /static
 
+# Static files collected - à ignorer
+/staticfiles/
 # Environment
 .env
 venv/
@@ -27,8 +30,8 @@ venv.bak/
 
 
 # Uploads
-/media/
-/uploads/
+# /media/
+
 
 # Migrations
 # **/migrations/*.py

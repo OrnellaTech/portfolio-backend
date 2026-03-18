@@ -37,7 +37,7 @@ if IS_PRODUCTION:
         '.railway.app',
         'portfolio-frontend-ecru-mu.vercel.app',
     ]
-    
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     # Database pour production (PostgreSQL)
     DATABASES = {
         'default': dj_database_url.config(

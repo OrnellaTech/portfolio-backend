@@ -25,5 +25,16 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/',include('portfolio.urls')),
     path('', views.index, name='index'),
-] + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] 
+# + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+# Les fichiers statiques collectés sont servis via WhiteNoise (pas besoin de route ici, mais on garde par sécurité)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+# Pour les médias : en développement on utilise static(), en production on ajoute une vue dédiée
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+else:
+    urlpatterns += [
+        re_path(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
+    ]
